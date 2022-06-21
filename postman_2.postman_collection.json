@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "24eb4caf-d691-4d4f-84cf-94f0db5aec22",
+		"name": "Academy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20950833"
+	},
+	"item": [
+		{
+			"name": "Search user by 1 char and strict: false",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"user\": \"r\",\r\n\"strict\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "characters amount = 10 in user",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"rangaradja\",\"strict\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check the strict search",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"rangaradja\",\"strict\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Only one property is defined",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 attributes in request",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"\",\"strict\":\"\",\"i\":\"\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "various types of attributes",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":true, \"strict\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "strict",
+							"value": "true",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
